@@ -62,7 +62,7 @@ static void button_event_task(void *arg)
     lv_obj_set_style_text_font(label_tip, &font_puhui_20_4, 0);
     lv_label_set_text(label_tip, "Hello!");
     lv_obj_set_style_text_color(label_tip, lv_color_make(0x00, 0x00, 0xFF), 0);
-    lv_obj_align(label_tip, LV_ALIGN_CENTER, 0, -20);
+    lv_obj_align(label_tip, LV_ALIGN_CENTER, 0, 0);
     bsp_display_unlock();
 
     while (1) {
@@ -102,7 +102,7 @@ extern "C" void app_main(void)
     lv_obj_set_style_text_font(label, &font_puhui_20_4, 0);
     lv_label_set_text(label, "M5Stack Core lvgl 示例");
     lv_obj_set_style_text_color(label, lv_color_make(0x00, 0x00, 0xFF), 0);
-    lv_obj_align(label, LV_ALIGN_TOP_MID, -10, 0);
+    lv_obj_align(label, LV_ALIGN_TOP_MID, 0, 3);
     bsp_display_unlock();
 
     button_init();

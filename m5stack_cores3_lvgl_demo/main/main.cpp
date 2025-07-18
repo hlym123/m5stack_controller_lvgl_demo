@@ -55,7 +55,7 @@ void ui_init()
     lv_obj_set_style_text_font(label, &font_puhui_20_4, 0);
     lv_label_set_text(label, "M5Stack CoreS3 lvgl 示例");
     lv_obj_set_style_text_color(label, lv_color_make(0x00, 0x00, 0xFF), 0);
-    lv_obj_align(label, LV_ALIGN_TOP_MID, -10, 0);
+    lv_obj_align(label, LV_ALIGN_TOP_MID, 0, 3);
 
     label_tip = lv_label_create(scr_main);
     lv_obj_set_style_text_font(label_tip, &font_puhui_20_4, 0);
